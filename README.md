@@ -21,6 +21,7 @@ LeelaZero Go selfplay games are split into single sgf files and classified in we
   * put each sgf game into its hash named folder (8chars)
   * PB/PW in selfplays are the same
 
+## Static Scripts
 * shell scripts to come
   * stat_opening_hoshi
   * ...
