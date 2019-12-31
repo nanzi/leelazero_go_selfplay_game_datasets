@@ -1,0 +1,59 @@
+# nohup python3 batch.py > batch_data.log 2>&1 &
+
+nohup: ignoring input
+ee42ae95b616e37b0692cced7e44e96440d48628fc12c6b94956696b652226d8  XZs/all_3M.sgf.xz
+4070a6ba0aa64f271b5bd048f114d93eeb0616206a76af9222cda9c8d19b55bf  SGFs/all_3M.sgf
+1ebcf837bc65c7ed902bc8bd23e5c3a26319ee329bb056e2e123c344e239ad53  XZs/all_7M.sgf.xz
+6195d178b03093efe6e28cf10a98bafc26d095395eb85d075c11e3c93503c18a  SGFs/all_7M.sgf
+ca4d470410b03dfbf0ceb565834e76233b5cba5758f6026077800cdbb1a4e4a5  XZs/all_16M.sgf.xz
+a02696e3c2e84982086acecd0b2b7d8d03171d41a0778b743c630534f9b5d3e3  SGFs/all_16M.sgf
+14da0d111a962b556bed81b3658efe020437971bbff2006dc44169f0a431b000  XZs/all_10M.sgf.xz
+71ab0c72e98f20238df1967a8e6dd469cbc87e51809efc3f8c892637fc88a08f  SGFs/all_10M.sgf
+a441132a43be0f7eeb2017f80551e4846e6053d9e28ad2fcbe9d718ed3097272  XZs/all_4M.sgf.xz
+857f04d02983d1550702bb494935b71ef433c1982690df87ae8ff421e28b7254  SGFs/all_4M.sgf
+06cba977bbcc44d987101b7b654b929924d7e6f23d488e54d4811d4700ea7005  XZs/all_18M.sgf.xz
+1843d59f31afc6f889881fc14e75648b2d23be85bc24602268dd50c879adaadc  SGFs/all_18M.sgf
+dffd8795e3d61988498733c3e47801414b4fbfc64f54dc99d813ca9b352966ae  XZs/all_12M.sgf.xz
+3f8e1400199c35a8af384379699cc6b78a87cc044e2ec0fba40c165250fe05a7  SGFs/all_12M.sgf
+fe38072adeb28df88b2cfd4a7c4541212776c7a0a9c192e515505ad91468fc5a  XZs/all_8M.sgf.xz
+ea08758fedd8aaba549b617fd51c5bb5bb9bdd164050b99feb5cbe462f39594f  SGFs/all_8M.sgf
+c4e41b70b45d24cb9f3b8ab5078ed55cf6662ef8f14d020a518a74a8387870df  XZs/all_5M.sgf.xz
+5508512042e6f29e071522ee77bffa5b0207f63f5a9fe43c5a9a89c20e05f760  SGFs/all_5M.sgf
+64b92d11ef73c17039314b0f1ff54989e2dee1c46091e6323757c8196fc4e696  XZs/all_11M.sgf.xz
+7fa21745548e60bc33f474dd6f5dcffe84e4ca0651e08627a1dc70ad0d3f0500  SGFs/all_11M.sgf
+f0387568a51639548cb6d688e460cc137e1a25b217d28decbb24eedb4fbf1349  XZs/all_13M.sgf.xz
+efea29a413aca676204f297c53b09034ccc6b9a487f2f40c239398e31a5d7194  SGFs/all_13M.sgf
+d3b4e1529a05ac16c377e68e71c2855ecb3eb38f6feb8d4b613c741ce4f6dc5f  XZs/all_15M.sgf.xz
+0d4448e96878a2e599974ea9c0c9e370fb4d36326b3d13a33b825e08a161e44c  SGFs/all_15M.sgf
+bc4817b586a0f167fa445ef236a67b57b9da6041b756ff614c46c1b689f9f040  XZs/all_2M.sgf.xz
+d1e904de226c7aeef3ed274edcdaae5eb1507bc9b620a47d19a1114db144b53c  SGFs/all_2M.sgf
+de6403f9020b51badd8923a72f89e9155bd32d62674db47248e6c8bda472858d  XZs/all_14M.sgf.xz
+59a9cdc6e5924cd78fa59aeb29741bf87acdb19bdcf374672fc21e6805bc2d6d  SGFs/all_14M.sgf
+6fe34f80013d556d2d8dd4fc803aa187ba537af05be5ac193eccc34abbbaf81d  XZs/all_9M.sgf.xz
+b27e1d7ab0fd4bf8d18c242451cbf2fa1b3333acedc9e915dbdf0551c8c03137  SGFs/all_9M.sgf
+e5c24bc4a893c9ead1fccf2d60df6647b1f58987b1850f7a3252265b10cd1953  XZs/all_6M.sgf.xz
+34ffcec7f80b2df326efd6f8d33ab7ffff991b19ec882a5881ff6de79c5a6ca6  SGFs/all_6M.sgf
+4c814d7b8b037ce3587cb711f93965dca98926447a1c091e3bfe220fa2c64a9e  XZs/all_1M.sgf.xz
+aee83e595be0dea03bd06d4e155b57a4534a9e04abea3e042ffc6030e8554f38  SGFs/all_1M.sgf
+92e89aa0b06ec63875f2ee36aa6340631f0245761e34a443bc1e96ae10203096  XZs/all_17M.sgf.xz
+3f75e67783f6cbd540e52225d82fdfe2db7b65583ee75aef1120390b59e0216d  SGFs/all_17M.sgf
+unxz&checksum&sed Complete:all_3M.sgf.xz
+unxz&checksum&sed Complete:all_7M.sgf.xz
+unxz&checksum&sed Complete:all_16M.sgf.xz
+unxz&checksum&sed Complete:all_10M.sgf.xz
+unxz&checksum&sed Complete:all_4M.sgf.xz
+unxz&checksum&sed Complete:all_18M.sgf.xz
+unxz&checksum&sed Complete:all_12M.sgf.xz
+unxz&checksum&sed Complete:all_8M.sgf.xz
+unxz&checksum&sed Complete:all_5M.sgf.xz
+unxz&checksum&sed Complete:all_11M.sgf.xz
+unxz&checksum&sed Complete:all_13M.sgf.xz
+unxz&checksum&sed Complete:all_15M.sgf.xz
+unxz&checksum&sed Complete:all_2M.sgf.xz
+unxz&checksum&sed Complete:all_14M.sgf.xz
+unxz&checksum&sed Complete:all_9M.sgf.xz
+unxz&checksum&sed Complete:all_6M.sgf.xz
+unxz&checksum&sed Complete:all_1M.sgf.xz
+unxz&checksum&sed Complete:all_17M.sgf.xz
+xzs_list:18,tar_list:18
+--- 1082.403398990631 seconds ---
