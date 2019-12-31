@@ -3,41 +3,26 @@ LeelaZero Go selfplay games are split into single sgf files and classified in we
 
 ## Prepare files
 
-* unzip xz files
-```bash
-# decompress xz file
-$ xz -d originFile.sgf.xz
-# use -k to keep originFile.sgf.xz not to be deleted
-$ xz -d -k originFile.sgf.xz
-```
-* remove ^M line ending
-```bash
-$ sed -e 's/^M$//' < originFile.sgf > newFile.sgf
-```
+* using [batch.py](python/batch.py)
+  * unzip xz files
+  * remove ^M line ending
+  * check integrity of sgf game 
 
-* check integrity of sgf game 
-```bash
-$ grep ";B" newFile.sgf -n | grep "(;"
-# If no error, there is nothing return.
-# Show the game which is ending with error: missing ")" or connect next directly
-# But we know it couldn't be only missing one symbol, maybe a lot!
-```
+* Manually fix integrity issues which are list in [batch_IntegrityCheck.log](batch_IntegrityCheck.log) in repo or in script log
 
-* split sgf file into small files(exmaple is 6)
-```bash
-$ split -n6 newFile.sgf
-```
-  Although we can split file small enough to get scripts running on small memory vps, 
-  I recommend no more than 10 clips on your own PC, 
-  or on a 8GiB memory machine which is economic for a few hours.
-  
-  You have to **COPY & PASTE** those records splitted on file bundary **MANUALLY**.
-* scripts in this repo
-  * python
-    * [split](python/split.py)
-    * [compress](python/compress.py)
-  * shell
-    * [stat_opening_hoshi](shell/stat_opening_hoshi.sh)
+* using [sgfcount.py](python/sgfcount.py)
+  * prepare for splitting
+
+* using [sgfclips.py](python/sgfclips.py)
+  * split sgf file into small files(5 for now)
+  * manually handle big sgf files one by one
+
+* using [split2hash.py](python/split2hash.py)
+  * put each sgf game into its hash named folder (8chars)
+  * PB/PW in selfplays are the same
+
+* shell scripts to come
+  * stat_opening_hoshi
   * ...
 
 
