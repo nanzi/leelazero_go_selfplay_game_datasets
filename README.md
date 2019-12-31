@@ -8,7 +8,7 @@ LeelaZero Go selfplay games are split into single sgf files and classified in we
   * remove ^M line ending
   * check integrity of sgf game 
 
-* Manually fix integrity issues which are list in [batch_IntegrityCheck.log](batch_IntegrityCheck.log) in repo or in script log
+* Manually fix integrity issues which are list in [batch_IntegrityCheck.log](python/batch_IntegrityCheck.log) in repo or in script log
 
 * using [sgfcount.py](python/sgfcount.py)
   * prepare for splitting
