@@ -50,7 +50,7 @@ while j:
         game = collection[i]
         output = str('(;'+game)
         # sgf info placed ....PB[]PW[]RE[]pattern.BUT some of "PB" chars are missing!!
-        # USE "PW" is more reliable.
+        # USE "PW" is more reliable. Exception: all_2M.sgf line 10814273
         fileHeadRaw1 = re.split(r'RE',game)
         fileHeadRaw2 = re.split(r'PW',game) 
 
@@ -64,7 +64,7 @@ while j:
         fileHead = re.split(r"]",fileHead0)
 
         ParaB = CountPW-1
-        if fileHead[CountPW][0:2]=="PW":
+        if fileHead[CountPW][0:2]=="PW": #  need to locate and fix broken sgf record with (grep "7ba9d22c\]PB\[" mSGFs/all_2M.sgf -n)
             if fileHead[ParaB][-5:]=="Human":
                 playerB = "Human"
             elif fileHead[ParaB][-8:]=="networks":
