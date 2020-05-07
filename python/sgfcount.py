@@ -3,9 +3,10 @@
 #
 # python3 sgfcount.py >sgfcount.log 2>&1 &
 #
-# Since all_7M.sgf has 999999 games after integrity issue fixed,
-# sgfcount.py give all_7M.sgf the 1000000th number which IS the file length in line.
+# Since all_7M.sgf has 999999 games after integrity issue fixed (counting with "wc -l count/all_7M.sgf.txt"),
 # Manually duplicate the 1000000th number as 1000001st in count/all_7M.sgf.txt.
+# Or change line 47 "    if i == 1000001:" to "    if i == 1000000:" in sgfclips.py
+#
 
 import os
 import time
