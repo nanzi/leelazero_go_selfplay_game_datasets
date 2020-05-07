@@ -75,7 +75,7 @@ while j:
             gtpVerRaw = re.split(r" ",str(fileHead[ParaB]))
             gtpVer = str(str(gtpVerRaw[-2:-1])[2:6]).strip("'")
         # Code above is missing one thing:
-        # Some networkhash is truck LONGER(many v1M weights) or SHORTER(only v108) than 8 chars!!
+        # Some networkhash is truncated LONGER(many v1M weights) or SHORTER(only v108) than 8 chars!!
         # AND   ../leela hashname which ALSO 8 chars makes the subfolder cd upwards Selfplays folder.
         else:
         #   ### Debug Info ###
