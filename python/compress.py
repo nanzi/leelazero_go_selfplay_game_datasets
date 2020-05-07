@@ -5,6 +5,7 @@
 #
 import os
 import time
+startTime = time.time()
 
 dir_list = os.listdir('./Selfplays') # get all folder names
 i = 0#count infile, print in the end to verify wheather all file zipped
@@ -17,3 +18,6 @@ for dir_name in dir_list:
 		print("{} Problem on filename".format(dir_name))
 
 print("dir_list:{},tar_list:{}".format(len(dir_list),i))# print logs
+
+compressTime = time.time()
+print("--- %s seconds --- split Finished" % (compressTime - startTime))
