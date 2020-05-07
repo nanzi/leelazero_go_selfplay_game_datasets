@@ -3,7 +3,7 @@
 # nohup python3 split2hash.py >>split2hash.log 2>&1 &
 #
 # Split sgf clips into single sgf game, into each network-hash named folder
-# Manually 1-18
+# Manually 1-20...
 #
 import re
 import time
@@ -18,8 +18,8 @@ j = 1 #1
 parseNum = 0 #0
 
 outputFolder = "Selfplays"
-mainfile = "all_1M.sgf" # CHANGE ME 1M~18M
-
+mainfile = "all_1M.sgf" # CHANGE ME 1M~20M... and so on
+labelM = "1M" # CHANGE ME (tar file location of games) 
 while j:
 
     clipArray = "ed/" + mainfile +str(j)
@@ -74,7 +74,7 @@ while j:
 
             gtpVerRaw = re.split(r" ",str(fileHead[ParaB]))
             gtpVer = str(str(gtpVerRaw[-2:-1])[2:6]).strip("'")
-        # Code above is missing one thing:
+        # Code above miss one thing:
         # Some networkhash is truncated LONGER(many v1M weights) or SHORTER(only v108) than 8 chars!!
         # AND   ../leela hashname which ALSO 8 chars makes the subfolder cd upwards Selfplays folder.
         else:
@@ -91,7 +91,7 @@ while j:
         if not os.path.exists(subFolderB) :
             os.makedirs(subFolderB)
 
-        fileName = playerB+"_"+str(gtpVer)+"_"+str(parseNum+i)+".sgf"
+        fileName = playerB+"_"+str(gtpVer)+"_"+labelM+"_"+str(parseNum+i)+".sgf"
         outputNameB = subFolderB + fileName
         with open(outputNameB, "w") as o:
             o.write(output)
