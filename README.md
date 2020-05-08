@@ -4,25 +4,33 @@ LeelaZero Go selfplay games are split into single sgf files and classified in we
 ## Prepare files
 
 * using [batch.py](python/batch.py)
-  * unzip xz files
+  * ($ head batch.py) to see instructions
+  * main function
+    * unzip xz files
   * remove ^M line ending
-  * check integrity of sgf game 
-
-* Manually fix integrity issues which are list in [batch_IntegrityCheck.log](python/batch_IntegrityCheck.log) in repo or in script log
+    * check integrity of sgf game 
+  
+* Manually fix integrity issues which are list in [batch.log](python/batch.log) in repo or produced by script
 
 * using [sgfcount.py](python/sgfcount.py)
-  * prepare for splitting
-
+  * ($ head sgfcount.py) to see instructions 
+* main function
+    * prepare for splitting in line with sed command
+  
 * using [sgfclips.py](python/sgfclips.py)
+  * ($ head sgfcount.py) to see instructions
+  * main function
   * split sgf file into small files(5 for now)
-  * manually handle big sgf files one by one
-
+    * should use (wc -l count/*.txt) for the last split index
+  
 * using [split2hash.py](python/split2hash.py)
-  * put each sgf game into its hash named folder (8chars)
-  * PB/PW in selfplays are the same
+  * main function 
+    * put each sgf game into its hash named folder (8chars)
+    * PB/PW in self-plays are the same
+    * PW is more reliable except one missing case in all_2M.sgf
 
 ## Static Scripts
-* shell scripts to come
+* shell scripts
   * stat_opening_hoshi
   * ...
 
