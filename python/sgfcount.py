@@ -1,5 +1,5 @@
 ##############  Second Part  ##########################
-# Fix all_8M.sgf & all_9M.sgf IntegrityCheck issue in batch.log first then run this script 
+# Fix all_7M.sgf & all_8M.sgf IntegrityCheck issue in batch.log first then run this script 
 #
 # python3 sgfcount.py >sgfcount.log 2>&1 &
 #
