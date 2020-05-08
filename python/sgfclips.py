@@ -2,7 +2,7 @@
 # 
 # nohup python3 sgfclips.py >>sgfclips.log 2>&1 &
 #
-# manually 1-18
+# manually 1M-20M... and so on
 # 
 import os
 import time
@@ -24,7 +24,7 @@ clip_dir="sgfClips"
 if not os.path.exists(clip_dir) :
     os.makedirs(clip_dir)
 
-fileNameRaw = "all_1M.sgf" # Change ME 1M~18M remember all_7M num5 issue and all_8M integratycheck
+fileNameRaw = "all_1M.sgf" # Change ME 1M~20M and so on
 fileName = sgf_dir+"/"+fileNameRaw
 countName = count_dir+"/"+fileNameRaw+".txt"
 with open(countName) as f:
