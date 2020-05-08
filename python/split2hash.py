@@ -13,16 +13,23 @@ startTime = time.time()
 
 clipArray = ""
 
-j = 1 #1
+j = 1
 
-parseNum = 0 #0
+parseNum = 0
+clip_dir="sgfClips" #ref to sgfclips.py
 
 outputFolder = "Selfplays"
-mainfile = "all_1M.sgf" # CHANGE ME 1M~20M... and so on
-labelM = "1M" # CHANGE ME (tar file location of games) 
+
+if not os.path.exists(outputFolder) :
+    os.makedirs(outputFolder)
+    
+labelM = "1M" # CHANGE ME  1M~20M... and so on (tar file location of games) 
+
+mainfile = "all_"+labelM+".sgf"
+
 while j:
 
-    clipArray = "ed/" + mainfile +str(j)
+    clipArray = clip_dir+"/" + mainfile +str(j) 
     if not os.path.exists(clipArray):
         break
 
