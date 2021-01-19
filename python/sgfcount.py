@@ -5,7 +5,7 @@
 #
 import mmap
 import os
-
+from past.builtins import xrange
 
 def tail(filename, n):
     """Returns last n lines from the filename. No exception handling"""
