@@ -5,6 +5,24 @@
 #
 import mmap
 import os
+
+
+def tail(filename, n):
+    """Returns last n lines from the filename. No exception handling"""
+    size = os.path.getsize(filename)
+    with open(filename, "rb") as f:
+        # for Windows the mmap parameters are different
+        fm = mmap.mmap(f.fileno(), 0, mmap.MAP_SHARED, mmap.PROT_READ)
+        try:
+            for i in xrange(size - 1, -1, -1):
+                if fm[i] == '\n':
+                    n -= 1
+                    if n == -1:
+                        break
+            return fm[i + 1 if i else 0:].splitlines()
+        finally:
+            fm.close()
+
 import time
 startTime = time.time()
 
@@ -57,22 +75,3 @@ for sgfs_name in trimedSGFsList:
         os.system("sed -n '{},{}p' {}/{} >{}/{}5".format(start5, end5, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
 countTime = time.time()
 print("--- %s seconds --- counting Finished" % (countTime - startTime))
-
-
-
-
-def tail(filename, n):
-    """Returns last n lines from the filename. No exception handling"""
-    size = os.path.getsize(filename)
-    with open(filename, "rb") as f:
-        # for Windows the mmap parameters are different
-        fm = mmap.mmap(f.fileno(), 0, mmap.MAP_SHARED, mmap.PROT_READ)
-        try:
-            for i in xrange(size - 1, -1, -1):
-                if fm[i] == '\n':
-                    n -= 1
-                    if n == -1:
-                        break
-            return fm[i + 1 if i else 0:].splitlines()
-        finally:
-            fm.close()
