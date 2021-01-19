@@ -16,10 +16,6 @@ LeelaZero Go selfplay games are split into single sgf files and classified in we
   * ($ head sgfcount.py) to see instructions 
   * main function
     * prepare for splitting in line with sed command
-  
-* using [sgfclips.py](python/sgfclips.py)
-  * ($ head sgfclips.py) to see instructions
-  * main function
     * split sgf file into small files(5 for now)
     * should use (wc -l count/*.txt) for the last split index
   
