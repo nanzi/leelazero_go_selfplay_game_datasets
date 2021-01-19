@@ -51,27 +51,26 @@ for sgfs_name in trimedSGFsList:
     start1,end1,start2,end2,start3,end3,start4,end4,start5,end5 = 1,0,0,0,0,  0,0,0,0,0
     
     countFile = countNFolder+"/"+sgfs_name+".txt"
-    with open(countFile) as f:
-        countTotal = int(tail(f,1))
-        end1 = int(countTotal/splitPiece)
+    countTotal = int(tail(countFile,1))
+    end1 = int(countTotal/splitPiece)
 	
-        start2 = end1+1
-        end2 = int(countTotal/splitPiece*min(splitPiece,2))
+    start2 = end1+1
+    end2 = int(countTotal/splitPiece*min(splitPiece,2))
 	
-        start3 = end2+1
-        end3 = int(countTotal/splitPiece*min(splitPiece,3))
+    start3 = end2+1
+    end3 = int(countTotal/splitPiece*min(splitPiece,3))
 
-        start4 = end3+1
-        end4 = int(countTotal/splitPiece*min(splitPiece,4))
+    start4 = end3+1
+    end4 = int(countTotal/splitPiece*min(splitPiece,4))
 	
-        start5 = end4+1
-        end5 = int(countTotal)#/splitPiece*min(splitPiece,5))
+    start5 = end4+1
+    end5 = int(countTotal)#/splitPiece*min(splitPiece,5))
 
 
-        os.system("sed -n '{},{}p' {}/{} >{}/{}1".format(start1, end1, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
-        os.system("sed -n '{},{}p' {}/{} >{}/{}2".format(start2, end2, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
-        os.system("sed -n '{},{}p' {}/{} >{}/{}3".format(start3, end3, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
-        os.system("sed -n '{},{}p' {}/{} >{}/{}4".format(start4, end4, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
-        os.system("sed -n '{},{}p' {}/{} >{}/{}5".format(start5, end5, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
+    os.system("sed -n '{},{}p' {}/{} >{}/{}1".format(start1, end1, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
+    os.system("sed -n '{},{}p' {}/{} >{}/{}2".format(start2, end2, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
+    os.system("sed -n '{},{}p' {}/{} >{}/{}3".format(start3, end3, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
+    os.system("sed -n '{},{}p' {}/{} >{}/{}4".format(start4, end4, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
+    os.system("sed -n '{},{}p' {}/{} >{}/{}5".format(start5, end5, trimedSGFsFolder, sgfs_name, clip_dir, sgfs_name))
 countTime = time.time()
 print("--- %s seconds --- counting Finished" % (countTime - startTime))
