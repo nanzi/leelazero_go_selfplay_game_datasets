@@ -1,5 +1,5 @@
 # ####  First  #######
-# First download xz file into "zipsFolder" folder.
+# First download xz file into "XZs" folder.
 # Other things will automanticly be done.
 # You can change folder name accordingly.
 # 
