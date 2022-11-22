@@ -7,12 +7,12 @@ import os
 import time
 startTime = time.time()
 
-dir_list = os.listdir('./Selfplays') # get all folder names
+dir_list = os.listdir('./MatchGames') # get all folder names
 i = 0#count infile, print in the end to verify wheather all file zipped
 for dir_name in dir_list:
 	i += 1
 	try:
-		os.system('tar -czf ./Selfplays/{}.tar.gz ./Selfplays/{}/'.format(dir_name, dir_name))
+		os.system('tar -czf ./MatchGames/{}.tar.gz ./MatchGames/{}/'.format(dir_name, dir_name))
 		print("Compression Complete:{}".format(dir_name))
 	except:
 		print("{} Problem on filename".format(dir_name))
